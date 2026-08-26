@@ -10,7 +10,7 @@ export const Route = createFileRoute("/contact")({
       {
         name: "description",
         content:
-          "Mojo Cars — Cotonou (98RF+XR). Appelez ou écrivez sur WhatsApp au +229 95 36 61 61 pour louer un véhicule.",
+          "Mojo Cars — Cotonou (9CF3+RP). Appelez ou écrivez sur WhatsApp au +229 95 36 61 61 pour louer un véhicule.",
       },
       { property: "og:title", content: "Contact & agence | Mojo Cars" },
       {
