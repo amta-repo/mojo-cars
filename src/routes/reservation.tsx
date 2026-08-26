@@ -14,16 +14,16 @@ export const Route = createFileRoute("/reservation")({
 
   head: () => ({
     meta: [
-      { title: "Réserver un véhicule | DAX Auto SARL Godomey" },
+      { title: "Réserver un véhicule | Mojo Cars Cotonou" },
       {
         name: "description",
         content:
-          "Réservez votre voiture de location en quelques secondes à Godomey. Confirmation rapide par WhatsApp au 0194952847.",
+          "Réservez votre voiture de location en quelques secondes à Cotonou. Confirmation rapide par WhatsApp au +229 95 36 61 61.",
       },
-      { property: "og:title", content: "Réserver un véhicule | DAX Auto SARL" },
+      { property: "og:title", content: "Réserver un véhicule | Mojo Cars" },
       {
         property: "og:description",
-        content: "Formulaire de réservation rapide, avec ou sans chauffeur, à Godomey Attrokpocodji.",
+        content: "Formulaire de réservation rapide, avec ou sans chauffeur, à Cotonou.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

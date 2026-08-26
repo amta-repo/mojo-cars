@@ -10,7 +10,7 @@ export function Footer() {
         <div>
           <Logo variant="light" />
           <p className="mt-4 max-w-xs text-[14px] leading-[20.44px] text-border-strong">
-            Location de véhicules et service de chauffeur à Godomey et partout au Bénin. Ponctuel,
+            Location de véhicules et service de chauffeur à Cotonou et partout au Bénin. Ponctuel,
             fiable et abordable.
           </p>
         </div>
@@ -71,7 +71,7 @@ export function Footer() {
       </div>
 
       <div className="border-t border-white/15 py-6 text-center text-[14px] text-border-strong">
-        © {new Date().getFullYear()} DAX Auto SARL. Tous droits réservés.
+        © {new Date().getFullYear()} Mojo Cars. Tous droits réservés.
       </div>
     </footer>
   );

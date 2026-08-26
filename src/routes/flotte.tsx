@@ -6,16 +6,16 @@ import { cars } from "@/data/cars";
 export const Route = createFileRoute("/flotte")({
   head: () => ({
     meta: [
-      { title: "Notre flotte de véhicules | DAX Auto SARL Godomey" },
+      { title: "Notre flotte de véhicules | Mojo Cars Cotonou" },
       {
         name: "description",
         content:
-          "SUV Lexus, pick-up Toyota Hilux et berlines Avensis en location à Godomey. Tarifs journaliers clairs, avec ou sans chauffeur.",
+          "SUV Lexus, pick-up Toyota Hilux et berlines Avensis en location à Cotonou. Tarifs journaliers clairs, avec ou sans chauffeur.",
       },
-      { property: "og:title", content: "Notre flotte de véhicules | DAX Auto SARL" },
+      { property: "og:title", content: "Notre flotte de véhicules | Mojo Cars" },
       {
         property: "og:description",
-        content: "Découvrez les SUV, pick-up et berlines disponibles à la location chez DAX Auto SARL.",
+        content: "Découvrez les SUV, pick-up et berlines disponibles à la location chez Mojo Cars.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

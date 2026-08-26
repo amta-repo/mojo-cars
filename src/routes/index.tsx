@@ -8,17 +8,17 @@ import { cars, CONTACT, lexusGreyHero, interior } from "@/data/cars";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "DAX Auto SARL — Location de voiture à Godomey, Bénin" },
+      { title: "Mojo Cars — Location de voiture à Cotonou, Bénin" },
       {
         name: "description",
         content:
-          "Louez un SUV Lexus, un pick-up Hilux ou une berline à Godomey. Avec ou sans chauffeur, tarifs clairs. Réservation WhatsApp au 0194952847.",
+          "Louez un SUV Lexus, un pick-up Hilux ou une berline à Cotonou. Avec ou sans chauffeur, tarifs clairs. Réservation WhatsApp au +229 95 36 61 61.",
       },
-      { property: "og:title", content: "DAX Auto SARL — Location de voiture à Godomey" },
+      { property: "og:title", content: "Mojo Cars — Location de voiture à Cotonou" },
       {
         property: "og:description",
         content:
-          "Location de véhicules et service de chauffeur ponctuel et abordable à Godomey, Bénin.",
+          "Location de véhicules et service de chauffeur ponctuel et abordable à Cotonou, Bénin.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -52,16 +52,42 @@ const services = [
 
 const reviews = [
   {
-    name: "Bob Junker",
-    meta: "Avis Google",
-    text: "Excellent service de chauffeur. Ponctuel et bon marché",
+    name: "Robert Rédacteur web",
+    meta: "2 avis · il y a 5 mois",
+    text: "MojoCars, c'est toujours un service fiable et efficace",
   },
   {
-    name: "SOHOUDJI Cégnannou Enock Lionel",
-    meta: "Local Guide · 691 avis · 2 924 photos · il y a un an",
-    text: "Belle expérience",
+    name: "Innocentia Vodounon",
+    meta: "1 avis · il y a 9 mois",
+    text: "J'ai toujours vécu de belles expériences avec Mojocars, je les recommande vivement.",
+  },
+  {
+    name: "alabi Abdoul",
+    meta: "1 avis · il y a 6 mois",
+    text: "C'était tout simplement génial",
+  },
+  {
+    name: "Akim aminou",
+    meta: "3 avis · il y a 2 ans",
+    text: "Très bonne expérience de location. Je recommande.",
+  },
+  {
+    name: "Olane Hounkpevi",
+    meta: "il y a 5 mois",
+    text: "",
+  },
+  {
+    name: "Joyce Glago",
+    meta: "il y a 2 ans",
+    text: "",
+  },
+  {
+    name: "Roukiah",
+    meta: "il y a 2 ans",
+    text: "",
   },
 ];
+
 
 function Index() {
   return (
@@ -70,13 +96,13 @@ function Index() {
       <section className="relative isolate overflow-hidden bg-foreground">
         <img
           src={lexusGreyHero}
-          alt="SUV Lexus RX gris de DAX Auto SARL au crépuscule"
+          alt="SUV Lexus RX gris de Mojo Cars au crépuscule"
           className="absolute inset-0 h-full w-full object-cover opacity-55"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/20" />
         <div className="container-dax relative py-20 md:py-28">
           <span className="badge bg-secondary text-secondary-foreground">
-            Godomey · Bénin
+            Cotonou · Bénin
           </span>
           <h1 className="mt-5 max-w-3xl text-[38px] font-bold leading-[1.1] text-background md:text-[58px]">
             Louez la voiture qu'il vous faut, <span className="text-secondary">aujourd'hui.</span>
@@ -158,7 +184,7 @@ function Index() {
         <div className="container-dax grid items-center gap-10 lg:grid-cols-2">
           <img
             src={interior}
-            alt="Intérieur cuir beige d'un véhicule DAX Auto SARL"
+            alt="Intérieur cuir beige d'un véhicule Mojo Cars"
             loading="lazy"
             className="w-full rounded-[10px] object-cover"
           />
@@ -188,17 +214,27 @@ function Index() {
       {/* Reviews */}
       <section className="container-dax py-16 md:py-24">
         <h2 className="text-[30px] font-bold md:text-[38px]">Ce que disent nos clients</h2>
-        <div className="mt-10 grid gap-6 md:grid-cols-2">
+        <p className="mt-3 text-[16px] text-text-tertiary">
+          Avis publiés sur Google Maps · note moyenne 5/5
+        </p>
+        <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {reviews.map((r) => (
-            <figure key={r.name} className="rounded-[10px] border border-border bg-card p-6">
-              <div className="flex gap-1" aria-label="Note : 5 sur 5">
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <Star key={i} size={18} className="fill-secondary text-secondary" />
-                ))}
+            <figure key={r.name} className="flex flex-col rounded-[10px] border border-border bg-card p-6">
+              <div className="flex items-center justify-between gap-3">
+                <div className="flex gap-1" aria-label="Note : 5 sur 5">
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <Star key={i} size={18} className="fill-secondary text-secondary" />
+                  ))}
+                </div>
+                <span className="text-[12px] font-bold uppercase tracking-wide text-text-tertiary">
+                  Google Maps
+                </span>
               </div>
-              <blockquote className="mt-4 text-[18px] font-bold leading-[26px]">
-                “{r.text}”
-              </blockquote>
+              {r.text && (
+                <blockquote className="mt-4 text-[18px] font-bold leading-[26px]">
+                  “{r.text}”
+                </blockquote>
+              )}
               <figcaption className="mt-4 text-[14px] text-text-tertiary">
                 <span className="font-bold text-foreground">{r.name}</span>
                 <br />
