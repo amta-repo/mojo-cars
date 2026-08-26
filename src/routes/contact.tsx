@@ -6,16 +6,16 @@ import { CONTACT } from "@/data/cars";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact & agence | DAX Auto SARL Godomey" },
+      { title: "Contact & agence | Mojo Cars Cotonou" },
       {
         name: "description",
         content:
-          "DAX Auto SARL — Godomey Attrokpocodji (98RF+XR). Appelez ou écrivez sur WhatsApp au 0194952847 pour louer un véhicule.",
+          "Mojo Cars — Cotonou (98RF+XR). Appelez ou écrivez sur WhatsApp au +229 95 36 61 61 pour louer un véhicule.",
       },
-      { property: "og:title", content: "Contact & agence | DAX Auto SARL" },
+      { property: "og:title", content: "Contact & agence | Mojo Cars" },
       {
         property: "og:description",
-        content: "Nous joindre : Godomey Attrokpocodji, téléphone et WhatsApp 0194952847.",
+        content: "Nous joindre : Cotonou, téléphone et WhatsApp +229 95 36 61 61.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -79,8 +79,8 @@ function ContactPage() {
 
         <div className="min-h-[420px] overflow-hidden rounded-[10px] border border-border">
           <iframe
-            title="Localisation de DAX Auto SARL à Godomey"
-            src="https://www.google.com/maps?q=98RF%2BXR%20Godomey&output=embed"
+            title="Localisation de Mojo Cars à Cotonou"
+            src="https://www.google.com/maps?q=9CF3%2BRP%20Cotonou&output=embed"
             className="h-full min-h-[420px] w-full"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"

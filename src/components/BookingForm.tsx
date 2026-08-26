@@ -16,7 +16,7 @@ export function BookingForm({
     vehicule: defaultVehicle,
     depart: "",
     retour: "",
-    lieu: "Godomey — Attrokpocodji",
+    lieu: "Cotonou",
     chauffeur: "non",
     message: "",
   });
@@ -27,7 +27,7 @@ export function BookingForm({
   const onSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const text = [
-      "Nouvelle demande de réservation — DAX Auto SARL",
+      "Nouvelle demande de réservation — Mojo Cars",
       `Nom: ${form.nom}`,
       `Téléphone: ${form.telephone}`,
       `Véhicule: ${form.vehicule || "À conseiller"}`,

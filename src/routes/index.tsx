@@ -8,17 +8,17 @@ import { cars, CONTACT, lexusGreyHero, interior } from "@/data/cars";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "DAX Auto SARL — Location de voiture à Godomey, Bénin" },
+      { title: "Mojo Cars — Location de voiture à Cotonou, Bénin" },
       {
         name: "description",
         content:
-          "Louez un SUV Lexus, un pick-up Hilux ou une berline à Godomey. Avec ou sans chauffeur, tarifs clairs. Réservation WhatsApp au 0194952847.",
+          "Louez un SUV Lexus, un pick-up Hilux ou une berline à Cotonou. Avec ou sans chauffeur, tarifs clairs. Réservation WhatsApp au +229 95 36 61 61.",
       },
-      { property: "og:title", content: "DAX Auto SARL — Location de voiture à Godomey" },
+      { property: "og:title", content: "Mojo Cars — Location de voiture à Cotonou" },
       {
         property: "og:description",
         content:
-          "Location de véhicules et service de chauffeur ponctuel et abordable à Godomey, Bénin.",
+          "Location de véhicules et service de chauffeur ponctuel et abordable à Cotonou, Bénin.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -70,13 +70,13 @@ function Index() {
       <section className="relative isolate overflow-hidden bg-foreground">
         <img
           src={lexusGreyHero}
-          alt="SUV Lexus RX gris de DAX Auto SARL au crépuscule"
+          alt="SUV Lexus RX gris de Mojo Cars au crépuscule"
           className="absolute inset-0 h-full w-full object-cover opacity-55"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/20" />
         <div className="container-dax relative py-20 md:py-28">
           <span className="badge bg-secondary text-secondary-foreground">
-            Godomey · Bénin
+            Cotonou · Bénin
           </span>
           <h1 className="mt-5 max-w-3xl text-[38px] font-bold leading-[1.1] text-background md:text-[58px]">
             Louez la voiture qu'il vous faut, <span className="text-secondary">aujourd'hui.</span>
@@ -158,7 +158,7 @@ function Index() {
         <div className="container-dax grid items-center gap-10 lg:grid-cols-2">
           <img
             src={interior}
-            alt="Intérieur cuir beige d'un véhicule DAX Auto SARL"
+            alt="Intérieur cuir beige d'un véhicule Mojo Cars"
             loading="lazy"
             className="w-full rounded-[10px] object-cover"
           />

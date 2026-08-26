@@ -98,10 +98,10 @@ export const formatFcfa = (value: number) =>
   new Intl.NumberFormat("fr-FR").format(value) + " FCFA";
 
 export const CONTACT = {
-  phone: "0194952847",
-  phoneHref: "tel:+2290194952847",
-  whatsapp: "https://wa.me/2290194952847",
-  address: "Godomey Attrokpocodji, Godomey",
-  plusCode: "98RF+XR Godomey",
-  maps: "https://www.google.com/maps/search/?api=1&query=98RF%2BXR+Godomey",
+  phone: "+229 95 36 61 61",
+  phoneHref: "tel:+22995366161",
+  whatsapp: "https://wa.me/22995366161",
+  address: "Cotonou, Bénin",
+  plusCode: "9CF3+RP Cotonou",
+  maps: "https://www.google.com/maps/search/?api=1&query=9CF3%2BRP+Cotonou",
 };
