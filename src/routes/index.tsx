@@ -214,17 +214,27 @@ function Index() {
       {/* Reviews */}
       <section className="container-dax py-16 md:py-24">
         <h2 className="text-[30px] font-bold md:text-[38px]">Ce que disent nos clients</h2>
-        <div className="mt-10 grid gap-6 md:grid-cols-2">
+        <p className="mt-3 text-[16px] text-text-tertiary">
+          Avis publiés sur Google Maps · note moyenne 5/5
+        </p>
+        <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {reviews.map((r) => (
-            <figure key={r.name} className="rounded-[10px] border border-border bg-card p-6">
-              <div className="flex gap-1" aria-label="Note : 5 sur 5">
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <Star key={i} size={18} className="fill-secondary text-secondary" />
-                ))}
+            <figure key={r.name} className="flex flex-col rounded-[10px] border border-border bg-card p-6">
+              <div className="flex items-center justify-between gap-3">
+                <div className="flex gap-1" aria-label="Note : 5 sur 5">
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <Star key={i} size={18} className="fill-secondary text-secondary" />
+                  ))}
+                </div>
+                <span className="text-[12px] font-bold uppercase tracking-wide text-text-tertiary">
+                  Google Maps
+                </span>
               </div>
-              <blockquote className="mt-4 text-[18px] font-bold leading-[26px]">
-                “{r.text}”
-              </blockquote>
+              {r.text && (
+                <blockquote className="mt-4 text-[18px] font-bold leading-[26px]">
+                  “{r.text}”
+                </blockquote>
+              )}
               <figcaption className="mt-4 text-[14px] text-text-tertiary">
                 <span className="font-bold text-foreground">{r.name}</span>
                 <br />
@@ -232,6 +242,8 @@ function Index() {
               </figcaption>
             </figure>
           ))}
+        </div>
+
         </div>
       </section>
 
