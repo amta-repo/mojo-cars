@@ -52,16 +52,42 @@ const services = [
 
 const reviews = [
   {
-    name: "Bob Junker",
-    meta: "Avis Google",
-    text: "Excellent service de chauffeur. Ponctuel et bon marché",
+    name: "Robert Rédacteur web",
+    meta: "2 avis · il y a 5 mois",
+    text: "MojoCars, c'est toujours un service fiable et efficace",
   },
   {
-    name: "SOHOUDJI Cégnannou Enock Lionel",
-    meta: "Local Guide · 691 avis · 2 924 photos · il y a un an",
-    text: "Belle expérience",
+    name: "Innocentia Vodounon",
+    meta: "1 avis · il y a 9 mois",
+    text: "J'ai toujours vécu de belles expériences avec Mojocars, je les recommande vivement.",
+  },
+  {
+    name: "alabi Abdoul",
+    meta: "1 avis · il y a 6 mois",
+    text: "C'était tout simplement génial",
+  },
+  {
+    name: "Akim aminou",
+    meta: "3 avis · il y a 2 ans",
+    text: "Très bonne expérience de location. Je recommande.",
+  },
+  {
+    name: "Olane Hounkpevi",
+    meta: "il y a 5 mois",
+    text: "",
+  },
+  {
+    name: "Joyce Glago",
+    meta: "il y a 2 ans",
+    text: "",
+  },
+  {
+    name: "Roukiah",
+    meta: "il y a 2 ans",
+    text: "",
   },
 ];
+
 
 function Index() {
   return (
