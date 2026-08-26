@@ -243,8 +243,6 @@ function Index() {
             </figure>
           ))}
         </div>
-
-        </div>
       </section>
 
       {/* CTA */}
